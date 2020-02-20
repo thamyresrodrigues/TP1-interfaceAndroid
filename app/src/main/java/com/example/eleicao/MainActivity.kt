@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btnEnviar.setOnClickListener{
+        btnEnviar.setOnClickListener{//chama outra activity
             var intt = Intent(this, page2::class.java)
             startActivity(intt)
         }
